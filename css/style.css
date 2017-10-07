@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #797979; }
+
+header {
+  background-image: url(../slike/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 50em;
+  padding: 2em 10em; }
+  header nav {
+    width: 100%;
+    background: #fff;
+    height: 3.5em; }
+    header nav div {
+      float: left;
+      margin: .4em .5em;
+      font-size: 1.5em;
+      font-family: "Raleway", sans-serif; }
+      header nav div span {
+        color: #ff3720;
+        font-weight: bold; }
+    header nav ul {
+      float: right;
+      list-style: none;
+      padding-right: 1em; }
+      header nav ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1em .5em; }
+        header nav ul li a {
+          text-decoration: none; }
+          header nav ul li a:hover {
+            color: #000; }
+  header h1, header h2 {
+    float: none;
+    color: #fff;
+    width: 40%;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto; }
+  header h1 {
+    border-bottom: 1px solid #ff3720;
+    margin-top: 7em; }
+
+section {
+  padding: 2em 10em; }
+
+h3 {
+  text-transform: uppercase;
+  margin-top: 2em; }
+
+button {
+  background: #ff3720;
+  text-transform: uppercase;
+  color: #fff;
+  margin: .3em auto;
+  border: none;
+  padding: .5em 1em;
+  cursor: pointer; }
+
+.catalog {
+  background: #f0f0f0;
+  text-align: center; }
+  .catalog .container {
+    width: 100%; }
+    .catalog .container .content {
+      display: inline-block;
+      width: 20%;
+      margin: 1.5em; }
+      .catalog .container .content img {
+        width: 100%; }
+      .catalog .container .content p {
+        font-weight: bold; }
+
+.pricing {
+  text-align: center; }
+  .pricing table {
+    margin: 2em auto;
+    width: 70%;
+    border-collapse: collapse; }
+    .pricing table th, .pricing table td {
+      padding: 0.7em; }
+    .pricing table thead {
+      background: #ff3720;
+      border-bottom: 1px solid #797979; }
+      .pricing table thead th {
+        color: #fff;
+        font-weight: bold; }
+        .pricing table thead th:first-child {
+          background: #e42b15; }
+    .pricing table tbody {
+      padding: 0 1em; }
+      .pricing table tbody tr {
+        border-bottom: 1px solid #797979; }
+        .pricing table tbody tr:hover {
+          background: #f0f0f0; }
+      .pricing table tbody td:first-child {
+        background: #f0f0f0; }
+  .pricing .nex {
+    display: none; }
+
+.contact {
+  background: #000; }
+  .contact:before, .contact:after {
+    content: "";
+    display: table; }
+  .contact:after {
+    clear: both; }
+  .contact .mg {
+    border-bottom: 1px solid #ff3720;
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif; }
+    .contact .mg span {
+      color: #ff3720; }
+  .contact p {
+    float: left;
+    color: #fff;
+    margin: 1em;
+    font-style: italic; }
+  .contact iframe {
+    float: right;
+    margin: 1em; }
+
+@media screen and (max-width: 1100px) {
+  header {
+    padding: 2em 1em; }
+    header h1, header h2 {
+      width: 90%; }
+
+  section {
+    padding: 2em 1em; }
+
+  .catalog .container .content {
+    width: 40%; }
+
+  .pricing table {
+    width: 50%; }
+
+  .contact {
+    text-align: center; }
+    .contact p {
+      float: none;
+      margin: 1em auto; }
+    .contact iframe {
+      float: none;
+      margin: 1em auto; } }
+@media screen and (max-width: 800px) {
+  header {
+    background: #000;
+    height: auto; }
+    header nav {
+      height: auto; }
+      header nav:before, header nav:after {
+        content: "";
+        display: table; }
+      header nav:after {
+        clear: both; }
+      header nav div {
+        float: none; }
+      header nav ul {
+        float: none; }
+        header nav ul li {
+          text-align: center;
+          display: block; }
+    header h1 {
+      margin-top: 2em; }
+
+  .catalog .container .content {
+    width: 80%; }
+    .catalog .container .content p {
+      margin-top: 1em; }
+
+  button {
+    margin: 1em auto;
+    padding: 1em 3em; }
+
+  .pricing table {
+    display: none; }
+  .pricing .nex {
+    display: block;
+    margin: 3em auto; } }
+
+/*# sourceMappingURL=style.css.map */
